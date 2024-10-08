@@ -50,7 +50,7 @@ then
 
   if [[ ${remote_tags[@]} =~ $tag_on_current_commit ]]
   then
-    printf "Commit already has deploy tag '$tag_on_current_commit' and it is pushed to remote. Can start deployment now..."
+    printf "Commit already has deploy tag '$tag_on_current_commit' and it is pushed to remote. Can start deployment now...\n"
     exit 0
   else
     printf "\nFound deploy tag '$tag_on_current_commit' on current commit and it is not in remote. Manual intervention is needed, please take a look. If you are sure this tag can be pushed, use this command: \n\n    git push origin tag $tag_on_current_commit \n\nAborting deployment..."
@@ -91,7 +91,7 @@ then
     exit 1
   fi
 
-  echo "Deploy tag created successfully! Can start deployment now..."
+  echo "Deploy tag created successfully! Can start deployment now...\n"
   exit 0
 
 else
