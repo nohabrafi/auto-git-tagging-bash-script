@@ -102,5 +102,3 @@ else
   echo "Cannot deploy. Please push to origin/master or origin/main! Aborting deployment..."
   exit 1
 fi
-
-# random things
